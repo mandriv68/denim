@@ -1,0 +1,113 @@
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0  var(--primary-lighter-color);
+  transition: all 0.5s linear;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1px 5px rgba(#727A82, 0.4);
+  }
+
+  &__imageBox {
+    position: relative;
+    width: 100%;
+    padding-bottom: 123%;
+    // margin-bottom: 12px;
+    @media (min-width: 480px) {
+      margin-bottom: 25px;
+    }
+    @media (min-width: 768px) {
+      padding-bottom: 135%;
+    }
+    &--lg {
+      @media (min-width: 480px) {
+        padding-bottom: 152%;
+      }
+
+      @media (min-width: 768px) {
+        padding-bottom: 135%;
+        flex: 1;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+
+    @media (min-width: 480px) {
+      position: static;
+      flex-direction: column;
+      padding: 0;
+      background-color: transparent;
+      color: inherit;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    margin-bottom: 3px;
+    word-break: break-all;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__price {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 700;
+  }
+
+  // &--lg {
+  //   img {
+  //     // max-height: 700px;
+  //   }
+  // }
+
+  // @media (min-width: 600px) {
+  //   width: 324px;
+  //   &__image {
+  //     height: 349px;
+  //     margin-bottom: 22px;
+  //   }
+
+  //   &__name {
+  //     font-size: 1.125rem;
+  //     line-height: 1.1325rem;
+  //     margin-bottom: 8px;
+  //   }
+
+  //   &__price {
+  //     font-size: 1rem;
+  //     line-height: 1.1875rem;
+  //   }
+  // }
+
+  // @media ($desktop) {
+  //   width: 270px;
+
+  //   &__image {
+  //     margin-bottom: 22px;
+  //   }
+  // }
+}

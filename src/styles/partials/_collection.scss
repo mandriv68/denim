@@ -1,0 +1,70 @@
+.collection {
+  margin-bottom: 50px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 10%;
+    margin-bottom: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: 768px) {
+      &:nth-child(2) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__switch {
+    font-size: 0.875rem;
+    line-height: 0;
+    font-weight: 500;
+    color: var(--primary-lighter-color);
+    transition: color 0.3s linear;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item:nth-child(-n + 2) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+#collectionSwitch:checked + .filters__groupTitle > .filters__arrow {
+  transform: rotateZ(180deg);
+}
+
+// #collectionSwitch:checked ~ .filters__groupContent {
+//   padding: 18px 0 8px;
+//   max-height: 200px;
+// }
+
+#collection-casual:checked ~ .collection__list .collection__switch[for="collection-casual"] {
+  color: var(--primary-color);
+}
+
+#collection-petite:checked ~ .collection__list .collection__switch[for="collection-petite"] {
+  color: var(--primary-color);
+}
+
+#collection-classic:checked ~ .collection__list .collection__switch[for="collection-classic"] {
+  color: var(--primary-color);
+}
+
+#collection-soulluxe:checked ~ .collection__list .collection__switch[for="collection-soulluxe"] {
+  color: var(--primary-color);
+}
+
+
+
+
+

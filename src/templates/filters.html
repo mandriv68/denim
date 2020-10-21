@@ -1,0 +1,20 @@
+<form class="filters" id="filter-by" action="" method="post">
+  <input type="checkbox" id="open-filter" class="visually-hidden">
+  <label for="open-filter" class="filters__openBtn">
+    Filter by
+    <svg class="inlineSvg filters__arrow">
+      <use xlink:href="../img/icons/icons-sprite.svg#arrow-open"></use>
+    </svg>
+  </label>
+  <div class="filters__body">
+    //= price.html
+    //= color.html
+    //= collection.html
+    <div class="filters__group filters__group--clear" role="group">
+      <button type="reset" class="filters__reset">Clear all</button>
+      <p class="clear__title">Filter</p>
+      <label for="open-filter" class="filters__closeBtn">Close</label>
+    </div>
+    <button type="submit" class="siteBtn filters__submit">Apply (9 products)</button>
+  </div>
+</form>

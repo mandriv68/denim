@@ -1,0 +1,54 @@
+.bestsellers {
+  padding: 55px 15px 60px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+
+  &__item {
+    width: 80%;
+    margin-bottom: 26px;
+    // &:nth-last-of-type(-n + 2) {
+    //   margin-bottom: 0;
+    // }
+    &:nth-child(odd) {
+      margin-left: auto;
+    }
+  }
+
+  &__link {
+    width: 100%;
+  }
+
+  @media ($tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 94px 45px 96px;
+
+    &__list {
+      order: 1;
+      margin-bottom: 0;
+    }
+
+    &__item {
+      margin-bottom: 47px;
+    }
+  }
+
+  @media ($desktop) {
+    padding: 122px 98px 126px;
+
+    &__list {
+      width: 100%;
+    }
+
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+}

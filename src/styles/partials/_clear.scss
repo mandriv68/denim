@@ -1,0 +1,20 @@
+.clear {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  order: -1;
+  font-size: 0.875rem;
+  line-height: 1rem;
+
+  &__title {
+    padding-right: 18px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

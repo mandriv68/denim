@@ -1,0 +1,62 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &__image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 11px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-weight: 500;
+  }
+
+  &--short &__image {
+    height: 126px;
+  }
+
+  @media ($tablet) {
+    width: 324px;
+
+    &__image {
+      height: 349px;
+      margin-bottom: 22px;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+    }
+
+    &--short &__image {
+      height: 290px;
+    }
+  }
+  @media ($desktop) {
+    width: 270px;
+
+    // &__image {
+    //   margin-bottom: 22px;
+    // }
+
+    // &__title {
+    //   font-size: 1.125rem;
+    //   line-height: 1.3125rem;
+    // }
+
+    // &--short &__image {
+    //   height: 290px;
+    // }
+  }
+}

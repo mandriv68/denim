@@ -1,0 +1,28 @@
+<fieldset class="filters__group collection">
+  <input type="checkbox" id="collectionSwitch" class="visually-hidden filters__groupSwitch">
+  <label for="collectionSwitch" class="filters__groupTitle">Collection
+    <svg class="inlineSvg filters__arrow">
+      <use xlink:href="../img/icons/icons-sprite.svg#arrow-open"></use>
+    </svg>
+  </label>
+  <div class="filters__groupContent">
+    <input class="visually-hidden" type="radio" name="filter-collection" id="collection-casual" value="casual">
+    <input class="visually-hidden" type="radio" name="filter-collection" id="collection-petite" value="petite" checked>
+    <input class="visually-hidden" type="radio" name="filter-collection" id="collection-classic" value="classic">
+    <input class="visually-hidden" type="radio" name="filter-collection" id="collection-soulluxe" value="soulluxe">
+    <ul class="collection__list">
+      <li class="collection__item">
+        <label for="collection-casual" class="collection__switch">Casual</label>
+      </li>
+      <li class="collection__item">
+        <label for="collection-petite" class="collection__switch">Petite</label>
+      </li>
+      <li class="collection__item">
+        <label for="collection-classic" class="collection__switch">Classic</label>
+      </li>
+      <li class="collection__item">
+        <label for="collection-soulluxe" class="collection__switch">Soulluxe</label>
+      </li>
+    </ul>
+  </div>
+</fieldset>

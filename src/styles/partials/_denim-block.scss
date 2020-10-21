@@ -1,0 +1,67 @@
+.denimBlock {
+  margin: 355px auto 0;
+  text-align: center;
+
+  &__slogan {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    color: var(--primary-lighter-color);
+  }
+
+  &__denim {
+    width: 205px;
+    height: 86px;
+    margin-bottom: 34px;
+    background: url("../img/denim.svg") center left / contain no-repeat;
+  }
+
+  &__btn {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media ($tablet) {
+    width: 100%;
+    margin: 98px 0 57px;
+    padding-left: 88px;
+    text-align: left;
+
+    &__slogan {
+      margin-bottom: 20px;
+    }
+
+    &__denim {
+      width: 233px;
+      height: 80px;
+      margin-bottom: 60px;
+    }
+
+    &__btn {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+  }
+  @media ($desktop) {
+    margin: 30px 0 53px;
+    padding-left: 170px;
+
+    &__slogan {
+      margin-bottom: 15px;
+    }
+
+    &__denim {
+      width: 305px;
+      height: 104px;
+      margin-bottom: 50px;
+    }
+
+    &__btn {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+  }
+}

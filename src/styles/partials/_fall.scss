@@ -1,0 +1,105 @@
+.fall {
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__banner {
+    width: 100%;
+    height: 226px;
+  }
+
+  &__wrapper {
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 16px, black 17px, black 18px);
+    padding: 15px 15px 0 15px;
+  }
+
+  &__content {
+    padding: 36px 0 40px;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 6px;
+    color: var(--primary-lighter-color);
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media ($tablet) {
+    flex-direction: row;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &__banner {
+      width: 354px;
+      height: 287px;
+    }
+
+    &__wrapper {
+      flex-grow: 1;
+      background-image: repeating-linear-gradient(-45deg, transparent, transparent 18px, black 19px, black 20px);
+      padding: 20px 20px 20px 0;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      padding: 45px 0 0 50px;
+    }
+
+    &__subtitle {
+      margin-bottom: 4px;
+      font-size: 1.125rem;
+      line-height: 1.3125rem;
+    }
+
+    &__title {
+      margin-bottom: 34px;
+    }
+
+    &__btn {
+      padding: 19px 35px 20px;
+    }
+
+  }
+  
+  @media ($desktop) {
+    padding-left: 98px;
+    padding-right: 98px;
+
+    &__banner {
+      width: 700px;
+      height: 370px;
+    }
+
+    &__wrapper {
+      background-image: repeating-linear-gradient(-45deg, transparent, transparent 24px, black 25px, black 26px);
+      padding: 31px 70px 31px 0;
+    }
+
+    &__content {
+      padding: 66px 0 0 70px;
+    }
+
+    &__subtitle {
+      margin-bottom: 7px;
+    }
+
+    &__title {
+      margin-bottom: 41px;
+    }
+
+    &__btn {
+      padding: 22px 70px 23px;
+    }
+  }
+}

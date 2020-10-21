@@ -1,0 +1,17 @@
+{
+  "editor.renameOnType": true,
+  "editor.fontSize": 20,
+  "terminal.integrated.fontSize": 18,
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "boundary",
+  "files.autoSave": "onFocusChange",
+  "editor.mouseWheelZoom": true,
+  "workbench.editor.closeEmptyGroups": false,
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "linebreak"
+  ]
+}

@@ -1,0 +1,41 @@
+.breadcrumbs {
+  display: flex;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: var(--primary-lighter-color);
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+
+    &::after {
+      content: "/";
+      position: absolute;
+      top: 0;
+      right: -15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__item--root {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  // &__link {
+  // }
+
+  &__link--current {
+    color: var(--primary-color);
+  }
+}

@@ -1,0 +1,36 @@
+.mainNavigation {
+  // position: relative;
+
+  & .burger {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+  }
+
+  @media ($desktop) {
+    .mainHeader & {
+      align-self: flex-start;
+      margin-top: -5px;
+    }
+    .mainHeader &__list {
+      flex-direction: column;
+    }
+    .mainHeader &__item:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+}

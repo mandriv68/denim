@@ -1,0 +1,87 @@
+.mainHeader {
+  background-color: var(--secondary-bg-color);
+
+  & .logo {
+    height: 57px;
+  }
+  
+  &__social,
+  & .arrowDown {
+    display: none;
+  }
+
+  &__social {
+    font-weight: 500;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-start;
+    padding: 24px 15px 50px;
+    background-image: url("../img/header/main-img.jpg"), repeating-linear-gradient(45deg, transparent, transparent 4px, black 5px),
+    repeating-linear-gradient(-45deg, transparent, transparent 4px, black 5px);
+    background-size: auto, 109px 80px, 109px 80px;
+    background-position: top 100px left 59px, top 80px left 39px, top 289px right 39px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
+  @media ($tablet) {
+
+    & .logo {
+      height: 67px;
+    }
+    
+    &__social,
+    & .arrowDown {
+      display: block;
+    }
+
+    &__social {
+      display: flex;
+      flex-direction: row-reverse;
+      align-self: flex-end;
+      &Item:last-child {
+        margin-right: 35px;
+      }
+    }
+  
+    &__wrapper {
+      height: 527px;
+      padding: 37px 45px 45px;
+      background-image: url("../img/header/main-img-tablet.jpg"), repeating-linear-gradient(45deg, transparent, transparent 4px, black 5px),
+      repeating-linear-gradient(-45deg, transparent, transparent 4px, black 5px);
+      background-size: auto, 141px 104px, 141px 104px;
+      background-position: top 83px left 429px, top 53px left 399px, top 328px left 582px;
+    }
+  
+  }
+
+  @media ($desktop) {
+
+    &__wrapper {
+      height: 617px;
+      padding: 50px 98px;
+      background-image: url("../img/header/main-img-desktop.jpg"), repeating-linear-gradient(45deg, black 1px, black 2px, transparent 3px, transparent 12px),
+      repeating-linear-gradient(-45deg, black 1px, black 2px, transparent 3px, transparent 12px);
+      background-size: auto, 232px 176px, 232px 176px;
+      background-position: top 50px left 668px, top 0 left 618px, top 441px left 916px;
+    }
+
+    &__social,
+    & .arrowDown {
+      align-self: flex-end;
+    }
+  
+    &__social {
+      flex-direction: column;
+      align-items: flex-end;
+      &Item:last-child {
+        margin-right: 0px;
+        margin-top: 35px;
+      }
+    }
+  }
+}
